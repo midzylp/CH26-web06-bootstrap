@@ -23,8 +23,8 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-sm bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img class="logo" src="./assets/img/luna-creciente.png"
-                    alt="luna-creciente" /></a>
+            <a class="navbar-brand" href="#"><a href="./index.html"><img class="logo" src="./assets/img/luna-creciente.png"
+                    alt="luna-creciente" /></a></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -33,7 +33,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link"
@@ -46,7 +46,7 @@
                             Proyectos
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Dime tu nombre</a></li>
+                            <li><a class="dropdown-item" href="./tunombre.html">Dime tu nombre</a></li>
                             <li>
                                 <a class="dropdown-item disabled" href="#">Calculadora</a>
                             </li>
@@ -147,7 +147,6 @@
         <div class="row justify-content-center">
             <div class="col-5 text-center">
                 <p id="name">Mi nombre</p>
-                <p >Cambia el color a azul</p>
             </div>
         </div>
         <!-- Botones, cambia el color -->
@@ -156,13 +155,30 @@
                 <button onclick="changeColorToRed()"type="button" class="btn btn-danger">Rojo</button>
             </div>
             <div class="col">
-
+                <button onclick="changeColorToBlue()" type="button" class="btn btn-info">Azul</button>
             </div>
             <div class="col">
-
+                <button onclick="changeColorToYellow()" type="button" class="btn btn-warning">Amarillo</button>
             </div>
         </div>
     </div>
+<br>
+    <!-- Texto,cambia el color -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col"><p class="text-color" onclick="changeColorParagraph('green', this)">Me cambiaré a verde</p></div>
+            <div class="col"><p class="text-color" onclick="changeColorParagraph('blue', this)">Me cambiaré a azul</p></div>
+            <div class="col"><p class="text-color" onclick="changeColorParagraph('yellow', this)">Me cambiaré a amarillo</p></div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                <button onclick="resetColors()" type="button" class="btn btn-dark">Reset</button>
+            </div>
+        </div>
+    </div>
+
+
 
 
     <!-- Ondas SVG -->
