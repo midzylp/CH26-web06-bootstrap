@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    
+</head>
+
+<body>
+     <!-- NavBar --> 
+    <nav class="navbar navbar-expand-sm bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><a href="./index.html"><img class="logo"
+                        src="./assets/img/luna-creciente.png" alt="luna-creciente" /></a></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="https://www.linkedin.com/in/luis-enrique-s%C3%A1nchez-p%C3%A9rez-845bb51b9/"
+                            target="_blank">Linkedin</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Proyectos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./tunombre.html">Dime tu nombre</a></li>
+                            <li>
+                                <a class="dropdown-item" href="./calculadora.html">Calculadora</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item disabled" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--  Calculadora 
+ -->
+    <main class="cont-general minflex">
+        <div class="sub-general container">
+            <div id="encabezado" class="row bg-warning border ">
+                <header class="text-center">
+                    <h1>Calculadora</h1>
+                </header>
+            </div>
+            <div class="row minflex bg-secondary">
+                <div class="calculadora container col-8 bg-success border p-2 m-3 ">
+                    <div class="row cont-display minflex text-center">
+                        <div class="display text-white w-75 my-3 bg-black">
+                        <div id="valoranterior"></div>
+                        <div id="valoractual"></div>
+                    </div>
+                </div>
+<!-- Botones  -->
+                    <div class="row justify-content-center">
+                        <!-- <button id="operador" class="btn btn-dark col-2 operador" value="raiz">√2</button>
+                        <button id="operador" class="btn btn-dark col-2 operador" value="potencia">^</button> -->
+                        <button id="c" class="btn btn-warning col-4">C</button>
+                        <button id="borrar" class="btn btn-warning col-4">&larr;</button>
+                    </div>
+                    <div class="row justify-content-center">
+                        <button class="btn btn-light col-lg-2 col-md-3 col-sm-5 numero">7</button>
+                        <button class="btn btn-light col-lg-2 col-md-3 col-sm-5 numero">8</button>
+                        <button class="btn btn-light col-lg-2 col-md-3 col-sm-5 numero">9</button>
+                        <button id="operador" class="btn btn-dark col-lg-2 col-md-3 col-sm-5 operador" value="dividir">/</button>
+                    </div>
+                    <div class="row justify-content-center">
+                        <button class="btn btn-light col-lg-2 col-md-3 col-sm-5 numero">4</button>
+                        <button class="btn btn-light col-lg-2 col-md-3 col-sm-5 numero">5</button>
+                        <button class="btn btn-light col-lg-2 col-md-3 col-sm-5 numero">6</button>
+                        <button id="operador" class="btn btn-dark col-lg-2 col-md-3 col-sm-5 operador">*</button>
+                    </div>
+                    <div class="row justify-content-center">
+                        <button class="btn btn-light col-lg-2 col-md-3 col-sm-5 numero">1</button>
+                        <button class="btn btn-light col-lg-2 col-md-3 col-sm-5 numero">2</button>
+                        <button class="btn btn-light col-lg-2 col-md-3 col-sm-5 numero">3</button>
+                        <button id="operador" class="btn btn-dark col-lg-2 col-md-3 col-sm-5" value="restar">-</button>
+                    </div>
+                    <div class="row justify-content-center">
+                        <button id="cero" class="btn btn-light col-lg-2 col-md-3 col-sm-5 numero">0</button>
+                        <button class="btn btn-light col-lg-2 col-md-3 col-sm-5 numero">.</button>
+                        <button id="igual" class="btn btn-success col-lg-2 col-md-3 col-sm-5 operador">=</button>
+                        <button id="operador" class="btn btn-dark col-lg-2 col-md-3 col-sm-5 operador">+</button>
+                    </div> 
+                </div>
+            </div>
+            <div class="row bg-primary minflex">
+                <footer class="text-center">
+                    <h3>Hecha con Bootstrap</h3>
+                </footer>
+            </div>
+        </div>
+    </main>
+
+   
+
+
+
+    <!-- Ondas SVG -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#212529" fill-opacity="1" d="M0,96L26.7,101.3C53.3,107,107,117,160,149.3C213.3,181,267,235,320,240C373.3,245,427,203,480,160C533.3,117,587,75,640,53.3C693.3,32,747,32,800,64C853.3,96,907,160,960,165.3C1013.3,171,1067,117,1120,101.3C1173.3,85,1227,107,1280,96C1333.3,85,1387,43,1413,21.3L1440,0L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+   
+  
+<script src="./assets/js/calculadora.js"></script>
+    
+</body>
+
+</html>
