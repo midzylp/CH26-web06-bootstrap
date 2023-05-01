@@ -35,14 +35,6 @@
     }
 }
 
-#valoranterior{
-    color: gray;
-}
-
-#valoractual{
-
-}
-
 .display{
     border-radius: 10px;
     display: flex;
