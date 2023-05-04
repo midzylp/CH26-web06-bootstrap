@@ -6,7 +6,8 @@ div{
 */
 
 .demo-content {
-    padding: 15px;
+    margin: 0;
+    padding: 0;
     background: #dbdfe5;
 }
 
