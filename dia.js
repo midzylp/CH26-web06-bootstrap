@@ -6,25 +6,25 @@ function calcularDia() {
     let diaDeLaSemana;
     switch (fecha.getDay()) {
       case 0:
-        diaDeLaSemana = "Domingo";
+        diaDeLaSemana = "Domingo, es fin de semana";
         break;
       case 1:
-        diaDeLaSemana = "Lunes";
+        diaDeLaSemana = "Lunes, es día laborable";
         break;
       case 2:
-        diaDeLaSemana = "Martes";
+        diaDeLaSemana = "Martes, es día laborable";
         break;
       case 3:
-        diaDeLaSemana = "Miércoles";
+        diaDeLaSemana = "Miércoles, día laborable";
         break;
       case 4:
-        diaDeLaSemana = "Jueves";
+        diaDeLaSemana = "Jueves, día laborable";
         break;
       case 5:
-        diaDeLaSemana = "Viernes";
+        diaDeLaSemana = "Viernes, día laborable";
         break;
       case 6:
-        diaDeLaSemana = "Sábado";
+        diaDeLaSemana = "Sábado, es fin de semana";
         break;
       default:
         diaDeLaSemana = "Error";

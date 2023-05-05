@@ -59,19 +59,19 @@
     <h1 class="text-center mt-3">Calcula el día</h1>
     
     <!-- Primer contenedor para 3 inputs -->
-    <div class="container">
+    <div class="container text-center">
         <div class="row">
             <div class="col">
                 <label for="diadado">Escribe el día:</label>
-                 <input id="diadado" type="number">
+                 <input value="01" id="diadado" type="number" min="01" max="31">
             </div>
             <div class="col">
                 <label for="mesdado">Escribe el mes:</label>
-                 <input id="mesdado" type="number">
+                 <input value="01" id="mesdado" type="number" min="01" max="12">
             </div>
             <div class="col">
                 <label for="añodado">Escribe el año:</label>
-                <input id="añodado" type="number">
+                <input value="01" id="añodado" type="number" min="1" max="2100">
             </div>
         </div>
     </div>
@@ -79,15 +79,17 @@
     <!-- Contenedor para botón -->
     
     <div class="container mt-4">
-        <div class="row">
+        <div class="row text-center">
             <div class="col">
-                <button onclick=calcularDia()>Calcular día</button>
+                <button id="calcularcalendario" onclick=calcularDia() type="button" class="btn btn-success">Calcular día</button>
             </div>
         </div>
     </div>
 
-
-    <p id="diaobjetivo"></p>
+    <div class="container text-center mt-5">
+        <strong><p id="diaobjetivo"></p></strong>
+    </div>
+    
 
     
 	 
